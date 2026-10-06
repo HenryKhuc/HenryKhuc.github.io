@@ -1,0 +1,666 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Henry Khuc &middot; Electrical Engineering ePortfolio</title>
+<meta name="description" content="Final year Electrical and Electronic Engineering (Honours) student at UTS. Power systems, instrumentation and measurement. Selected project work, results and an internship reflection.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,200..600&family=Geist+Mono:wght@400..600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<nav class="nav" aria-label="Primary">
+  <a class="home" href="index.html" aria-current="page">HK</a>
+  <a class="opt" href="index.html#work">Work</a>
+  <a href="resume.html">Resume</a>
+  <a href="reflection.html">Reflection</a>
+  <a href="cover-letter.html">Cover letter</a>
+  <a class="opt" href="index.html#contact">Contact</a>
+</nav>
+
+<!-- ============================= HERO ============================= -->
+<header class="hero wrap" id="top">
+  <img class="portrait" src="assets/img/headshot.jpg" alt="Henry Khuc" width="132" height="132">
+  <h1>Henry<br>Khuc</h1>
+  <div class="hero-grid">
+    <p class="hero-statement">
+      I test ideas on the bench before I trust them on paper, and I would rather
+      report an honest limitation than an optimistic summary that does not hold up.
+    </p>
+    <div>
+      <span class="label">Here, you can start</span>
+      <ul class="start-list">
+        <li><a href="#work"><span class="key">A</span><span>See six projects, from protection schemes to a hospital device</span></a></li>
+        <li><a href="resume.html"><span class="key">B</span><span>Read my resume</span></a></li>
+        <li><a href="reflection.html"><span class="key">C</span><span>Read what I got wrong during my internship, and what it taught me</span></a></li>
+        <li><a href="cover-letter.html"><span class="key">D</span><span>Read my cover letter for the Industrus Graduate Program</span></a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="facts">
+    <div class="fact">
+      <span class="label">Degree</span>
+      <div class="v">B.Eng (Hons)</div>
+      <div class="s">Electrical and Electronic, UTS. Completing November 2026.</div>
+    </div>
+    <div class="fact">
+      <span class="label">Academic record</span>
+      <div class="v">WAM 88.94</div>
+      <div class="s">GPA 6.78 of 7.0. Dean&rsquo;s List 2024, 2025, 2026.</div>
+    </div>
+    <div class="fact">
+      <span class="label">Focus</span>
+      <div class="v">Power systems</div>
+      <div class="s">Grid operations, protection and renewable integration.</div>
+    </div>
+    <div class="fact">
+      <span class="label">Tools</span>
+      <div class="v">PSS&reg;E, PowerFactory</div>
+      <div class="s">MATLAB and Simulink, Python, C and C++.</div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================= ORIGIN ============================= -->
+<section class="wrap" id="why">
+  <div class="section-head">
+    <span class="label">Why engineering</span>
+    <span class="bar"></span>
+    <span class="label">Where this started</span>
+  </div>
+  <div class="origin">
+    <div>
+      <p class="pull">I wanted to use mathematics and physics on things that physically work.</p>
+      <div class="marks">
+        <div><span class="label">Year 12 maths</span><div class="v">9.6</div></div>
+        <div><span class="label">Year 12 physics</span><div class="v">9.8</div></div>
+      </div>
+    </div>
+    <div>
+      <p>
+        Mathematics and physics were my strongest subjects at school, and the part I enjoyed
+        most was seeing a calculation hold up outside the textbook. Electrical engineering
+        was the clearest way to keep doing that with real equipment rather than only on paper.
+      </p>
+      <p>
+        Power systems came from home. My father works in power systems at EVN, Vietnam&rsquo;s
+        national electricity utility, so I had a working picture of how a grid is run before
+        I ever studied one, and that is why I headed for this field. I began my degree at
+        RMIT Vietnam and transferred to UTS in 2023.
+      </p>
+      <p>
+        I am now looking for a summer internship in power systems in Sydney, in power system
+        studies, grid connection or protection, at a market or network operator such as AEMO
+        or Endeavour Energy, or at a power systems consultancy such as Aurecon or WSP.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= WORK ============================= -->
+<main class="wrap" id="work">
+  <div class="section-head">
+    <span class="label">Selected work</span>
+    <span class="bar"></span>
+    <span class="label" id="work-count">Six projects</span>
+  </div>
+
+  <h2 class="display">What I have built and measured.</h2>
+  <p class="lede" style="margin-bottom:34px">
+    Six projects across power systems, forecasting and hardware. Every number below comes
+    from my own reports and result files, and where a result is a team result or is not
+    yet verified, I say so on the project.
+  </p>
+
+  <div class="filters" role="group" aria-label="Filter projects by area">
+    <button type="button" data-filter="all" aria-pressed="true">All</button>
+    <button type="button" data-filter="power" aria-pressed="false">Power systems</button>
+    <button type="button" data-filter="data" aria-pressed="false">Modelling and data</button>
+    <button type="button" data-filter="hardware" aria-pressed="false">Hardware</button>
+  </div>
+
+  <!-- ---------- 01 Optik ---------- -->
+  <article class="project" data-area="hardware data">
+    <div class="p-top">
+      <div class="p-meta">
+        <span class="label">01 &middot; Instrumentation</span>
+        <h3>Respiratory impedance monitor for non-invasive ventilation</h3>
+        <div class="p-org">
+          Optik Consultancy, UTS Tech Lab<br>
+          Client: Respiratory Investigation Unit, Royal North Shore Hospital<br>
+          May to August 2026 &middot; Electrical and measurement engineer
+        </div>
+        <p class="p-role">
+          A six person multidisciplinary team. I owned the electrical and measurement side:
+          excitation firmware, the measurement engine, and the calibration methodology.
+        </p>
+      </div>
+      <div>
+        <p class="quote">
+          Two earlier student groups had tried this problem for the hospital and failed for
+          basic reasons. Genuine electrical capability was the bottleneck, and that is what
+          I was there to supply.
+        </p>
+        <p>
+          The device applies a Forced Oscillation Technique signal on top of non-invasive
+          ventilation and measures respiratory impedance while the patient breathes normally,
+          so that expiratory flow limitation in COPD can be detected without interrupting
+          therapy. I built the excitation firmware and the measurement engine that turns
+          pressure and flow signals into respiratory resistance and reactance, selected and
+          bench verified the differential pressure transducer against its amplitude and
+          phase response, and developed the calibration methodology.
+        </p>
+        <p>
+          It is the first working measurement a student group has brought back to the
+          hospital on this problem. I demonstrated it to the clinical team and told them
+          directly that the patient side measurement was not yet accurate enough, and why.
+        </p>
+      </div>
+    </div>
+
+    <div class="chips">
+      <div class="chip"><span class="label">Standard</span><div class="cv">ERS 2020 oscillometry</div></div>
+      <div class="chip"><span class="label">Signal chain</span><div class="cv">Loudspeaker driver, sealed chamber, differential pressure</div></div>
+      <div class="chip"><span class="label">Output</span><div class="cv">Resistance and reactance, live</div></div>
+      <div class="chip"><span class="label">Team</span><div class="cv">6 people, 4 disciplines</div></div>
+    </div>
+
+    <div class="figs three">
+      <figure class="photo">
+        <img src="assets/img/optik-measure.jpg" alt="A subject lying down wearing a ventilation mask connected to the oscillometry device through a flow head." loading="lazy" width="1800" height="1050">
+        <figcaption>The measurement head in use during the showcase. The oscillation is applied through the mask circuit while the subject breathes on the ventilator.</figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="assets/img/optik-device.jpg" alt="The project team gathered around the assembled device on a bench, reviewing printed results." loading="lazy" width="1206" height="1608">
+        <figcaption>Final day of the internship. The sealed chamber and flow head are on the bench in front of the team.</figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="assets/img/optik-team.jpg" alt="The full project team standing behind their showcase table with the device and poster." loading="lazy" width="1800" height="1012">
+        <figcaption>Handover and showcase at UTS Tech Lab, August 2026.</figcaption>
+      </figure>
+    </div>
+
+    <div class="note">
+      <strong>What I would still fix.</strong> The patient side measurement is not yet
+      accurate enough for clinical use. My handover report sets out exactly what works,
+      what does not and why, which is the part the supervising clinician singled out as
+      the most useful thing we left behind.
+    </div>
+  </article>
+
+  <!-- ---------- 02 Capstone ---------- -->
+  <article class="project" data-area="data power">
+    <div class="p-top">
+      <div class="p-meta">
+        <span class="label">02 &middot; Forecasting</span>
+        <h3>Electricity price forecasting for the National Electricity Market</h3>
+        <div class="p-org">
+          Engineering Capstone, UTS &middot; Supervisor: Dr Gang Lei<br>
+          February to November 2026 &middot; Solo project
+        </div>
+        <p class="p-role">
+          Entirely my own work, across two semesters. Built on AEMO five minute dispatch
+          price data for New South Wales.
+        </p>
+      </div>
+      <div>
+        <p class="quote">
+          Four model families, ranked only by how close they get to the price that
+          actually settled.
+        </p>
+        <p>
+          I built and compared XGBoost, LSTM, ARIMA and LEAR day ahead forecasters under a
+          common evaluation protocol, on 1 April to 24 August 2026. XGBoost was the most
+          accurate, at an average error of $17.80 per MWh against the actual spot price.
+          I deliberately rank models against the settled price rather than against a naive
+          benchmark, because a favourable benchmark can make a weak model look strong.
+        </p>
+        <p>
+          A separate five minute ahead model runs on the same data and reaches a mean
+          absolute error of 6.42 $/MWh, and unlike the day ahead models it can predict
+          above $300. The two are different forecasting tasks and I do not compare their
+          errors with each other.
+        </p>
+      </div>
+    </div>
+
+    <div class="chips">
+      <div class="chip"><span class="label">Data</span><div class="cv">AEMO 5 minute dispatch, NSW</div></div>
+      <div class="chip"><span class="label">Models</span><div class="cv">XGBoost, LSTM, ARIMA, LEAR</div></div>
+      <div class="chip"><span class="label">Day ahead result</span><div class="cv">$17.80/MWh MAE, best of four</div></div>
+      <div class="chip"><span class="label">Stack</span><div class="cv">Python, MATLAB</div></div>
+    </div>
+
+    <div class="figs two">
+      <figure>
+        <img src="assets/img/capstone-mae.png" alt="Horizontal bar chart of mean absolute error by model: XGBoost 17.80, LSTM 19.87, ARIMA 20.70, LEAR 22.08 dollars per megawatt hour." loading="lazy" width="1440" height="620">
+        <figcaption>Day ahead accuracy over the full test span, 1 Apr to 24 Aug 2026. Lower is better. Measured against the actual spot price, not against a naive baseline.</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/img/capstone-spike.png" alt="Line chart of spot price on 31 July 2026 showing a spike above 500 dollars per megawatt hour that all four models under-predict." loading="lazy" width="1440" height="680">
+        <figcaption>A spike day, 31 July 2026. Every model under-predicts the morning peak. Capturing the magnitude of spikes, not just their timing, is the open problem in semester two.</figcaption>
+      </figure>
+    </div>
+
+    <div class="note">
+      <strong>The honest limitation.</strong> The models find the shape of a spike day but
+      not its height. That gap is the whole point of the second semester, which extends the
+      work to probabilistic forecasting and to features extracted from AEMO&rsquo;s own
+      written price spike reports.
+    </div>
+  </article>
+
+  <!-- ---------- 03 BESS ---------- -->
+  <article class="project" data-area="power data">
+    <div class="p-top">
+      <div class="p-meta">
+        <span class="label">03 &middot; Transmission</span>
+        <h3>Battery storage placement on the WSCC 9 bus system</h3>
+        <div class="p-org">
+          Power Systems Studio A, UTS &middot; High Distinction<br>
+          February to May 2026 &middot; Team of three
+        </div>
+        <p class="p-role">
+          All three of us worked every part of the study in parallel rather than splitting it
+          into sections. The results below are the team&rsquo;s. The PSS&reg;E automation was
+          mine.
+        </p>
+      </div>
+      <div>
+        <p class="quote">
+          One bus was in violation. Putting 50 MW of storage at that bus was worth more
+          than putting it anywhere else.
+        </p>
+        <p>
+          We modelled the WSCC 9 bus benchmark in Siemens PSS&reg;E and ran load flow, N-1
+          contingency screening, P-V voltage stability and three phase fault transient
+          analysis against NER S5.1a and S5.1.4 and AEMO stability guidance. Under loss of
+          Line 4-5, Bus 5 fell to 0.8389 pu, the only bus outside limits. A 50 MW battery at
+          Bus 5, modelled with the REGCA1 and REECA1 converter models, lifted it to
+          0.9411 pu and displaced 50.3 MW from the slack generator.
+        </p>
+        <p>
+          We compared four candidate buses, 4, 5, 7 and 9, on P-V margin. With the battery
+          at Bus 5, collapse free transfer under loss of Line 4-5 rose from 200 MW to
+          320 MW. I wrote the psspy and dyntools pipeline that loads the case, sweeps fault
+          clearing times in a loop, pulls the channels back out and plots them, which turned
+          a thirty minute manual sweep into a few seconds.
+        </p>
+      </div>
+    </div>
+
+    <div class="chips">
+      <div class="chip"><span class="label">Worst N-1 bus</span><div class="cv">0.8389 to 0.9411 pu</div></div>
+      <div class="chip"><span class="label">Transfer margin</span><div class="cv">200 to 320 MW, Line 4-5 out</div></div>
+      <div class="chip"><span class="label">Slack displaced</span><div class="cv">50.3 MW</div></div>
+      <div class="chip"><span class="label">Automation</span><div class="cv">psspy, dyntools, matplotlib</div></div>
+    </div>
+
+    <div class="figs three">
+      <figure>
+        <img src="assets/img/bess-sld.png" alt="Single line diagram of the WSCC nine bus test system." loading="lazy" width="1600" height="1096">
+        <figcaption>The WSCC 9 bus benchmark network as modelled in PSS&reg;E.</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/img/bess-n1.png" alt="Grouped bar chart of bus voltages with and without the battery, showing Bus 5 rising above the 0.9 pu limit." loading="lazy" width="1600" height="972">
+        <figcaption>Post contingency bus voltages after loss of Line 4-5. Bus 5 is the only violation, and the battery clears it.</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/img/bess-pv.png" alt="P-V curves for all monitored buses with the battery in service, showing Bus 5 collapsing last." loading="lazy" width="1600" height="997">
+        <figcaption>P-V curves with the battery in service. Bus 5 holds above 0.90 pu considerably further along the transfer.</figcaption>
+      </figure>
+    </div>
+
+    <div class="note">
+      <strong>What the battery did not do.</strong> It did not improve critical clearing
+      time. The transient study showed the CCT is set by the machines and the fault
+      location, and the battery does not change it, so we did not claim an improvement we
+      could not demonstrate.
+    </div>
+  </article>
+
+  <!-- ---------- 04 Protection ---------- -->
+  <article class="project" data-area="power">
+    <div class="p-top">
+      <div class="p-meta">
+        <span class="label">04 &middot; Protection</span>
+        <h3>Six zone protection scheme for a 22 kV industrial customer network</h3>
+        <div class="p-org">
+          Power Systems Studio B, UTS &middot; Brief supplied by Middleton Group<br>
+          August to November 2025 &middot; Individually authored, peer verified
+        </div>
+        <p class="p-role">
+          Three of us each designed the complete scheme independently, then used each
+          other&rsquo;s designs to check our own settings.
+        </p>
+      </div>
+      <div>
+        <p class="quote">
+          Other teams ran it like a relay, one person per section of the network. All three
+          of us ran the same track from start to finish, sharing the bottle of water.
+        </p>
+        <p>
+          A 2 MVA Dyn11 transformer supplying 1.6 MVA across three LV feeders. I designed
+          six coordinated protection zones: transformer differential on an SEL 387-1A,
+          busbar differential on an SEL 487E-1A, and overcurrent and earth fault protection
+          on each feeder to IEC 60255 inverse time curves with a 0.3 second grading margin
+          to the upstream backup relay. CT ratios and polarities were selected so that relay
+          secondary currents stayed within the 1 A rating. The whole scheme was validated in
+          DIgSILENT PowerFactory across three phase, two phase, single line to ground and
+          two phase to ground faults at multiple locations.
+        </p>
+        <p>
+          While tracing the zones I found that the LV busbar was not covered by any of them.
+          I raised it with the academic supervisor, who confirmed it sat outside the brief
+          but recommended designing it anyway, so I added the busbar differential zone.
+        </p>
+      </div>
+    </div>
+
+    <div class="chips">
+      <div class="chip"><span class="label">Network</span><div class="cv">2 MVA Dyn11, 1.6 MVA over 3 feeders</div></div>
+      <div class="chip"><span class="label">Relays</span><div class="cv">SEL 387-1A, SEL 487E-1A</div></div>
+      <div class="chip"><span class="label">Grading</span><div class="cv">0.3 s margin, IEC 60255</div></div>
+      <div class="chip"><span class="label">Validation</span><div class="cv">4 fault types in PowerFactory</div></div>
+    </div>
+
+    <div class="figs three">
+      <figure>
+        <img src="assets/img/at4-sld.png" alt="Client single line diagram from the 22 kV distribution network connection down to three low voltage loads." loading="lazy" width="1113" height="1789">
+        <figcaption>The client single line diagram the brief started from, 22 kV down to three LV loads.</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/img/at4-network.png" alt="PowerFactory model of the network showing relay locations and CT ratios at each zone." loading="lazy" width="1800" height="778">
+        <figcaption>The PowerFactory model with relay locations and CT ratios. The busbar differential at Bus 2 is the zone added beyond the brief.</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/img/at4-grading.png" alt="Time current grading curves for the feeder overcurrent relays and the upstream external relay." loading="lazy" width="1800" height="1264">
+        <figcaption>Time current grading. Each feeder relay clears ahead of the upstream backup with the required margin held across the fault range.</figcaption>
+      </figure>
+    </div>
+  </article>
+
+  <!-- ---------- 05 Microgrid (extra) ---------- -->
+  <article class="project extra" data-area="power data" hidden>
+    <div class="p-top">
+      <div class="p-meta">
+        <span class="label">05 &middot; Microgrid</span>
+        <h3>Sustainable hybrid microgrid for a remote site in Mildura</h3>
+        <div class="p-org">
+          Professional Studio A, UTS &middot; High Distinction<br>
+          August to November 2025 &middot; Team of six &middot; 66 hours logged
+        </div>
+        <p class="p-role">
+          My share of the work was the battery and its DC to DC converter, plus the bus
+          architecture decision. The system level results are the team&rsquo;s.
+        </p>
+      </div>
+      <div>
+        <p class="quote">
+          I argued the team out of a DC bus, and I brought published sources rather than a
+          preference.
+        </p>
+        <p>
+          A 10 kW solar array, a 2 kW micro hydro turbine and a 50 kWh battery supplying
+          three houses, modelled in MATLAB and Simulink with Simscape Electrical and
+          Simscape Battery. I modelled the battery and its bidirectional buck and boost DC
+          to DC converter.
+        </p>
+        <p>
+          The team started on a DC bus architecture. I read the published microgrid
+          literature independently and proposed switching to a common AC bus, because the
+          micro hydro generator and the household loads are both natively AC and a DC bus
+          forced conversion stages that earned nothing. The team adopted it, and it removed
+          a whole layer of integration work.
+        </p>
+      </div>
+    </div>
+
+    <div class="chips">
+      <div class="chip"><span class="label">Generation</span><div class="cv">10 kW PV, 2 kW micro hydro</div></div>
+      <div class="chip"><span class="label">Storage</span><div class="cv">50 kWh battery</div></div>
+      <div class="chip"><span class="label">My scope</span><div class="cv">Battery and DC to DC converter</div></div>
+      <div class="chip"><span class="label">Decision</span><div class="cv">DC bus to common AC bus</div></div>
+    </div>
+
+    <div class="figs">
+      <figure>
+        <img src="assets/img/mg-architecture.png" alt="Architecture diagram showing a DC side with solar and battery, an AC side with hydro, and an interlinking converter joining both to a common AC bus." loading="lazy" width="1800" height="1046">
+        <figcaption>The architecture after the change. Solar and storage sit on the DC side behind an interlinking converter, and everything meets at a common AC bus.</figcaption>
+      </figure>
+    </div>
+
+    <div class="note">
+      <strong>Stated carefully on purpose.</strong> The 2025 team report sized the system
+      for 72 hours of islanded supply but left harmonic distortion, the islanding run and
+      the fault tests as open items. I rebuilt the model in 2026 and measured those, so I
+      do not present them here as 2025 team results.
+    </div>
+  </article>
+
+  <!-- ---------- 06 Buck converter (extra) ---------- -->
+  <article class="project extra" data-area="hardware" hidden>
+    <div class="p-top">
+      <div class="p-meta">
+        <span class="label">06 &middot; Power electronics</span>
+        <h3>Synchronous buck converter, 40 V to 10 V at 35 W</h3>
+        <div class="p-org">
+          Power Electronics 41278, UTS &middot; High Distinction, 87<br>
+          Semester 1 2025 &middot; Team of four
+        </div>
+        <p class="p-role">
+          I designed and wound the inductor and ran the efficiency optimisation. Teammates
+          covered the mathematical proof, the LTspice simulation, the control implementation
+          and the literature review.
+        </p>
+      </div>
+      <div>
+        <p class="quote">
+          The converter worked on the first build. It was just wasting a third of the
+          input power, and the part everyone had trusted was the problem.
+        </p>
+        <p>
+          The first build converted correctly but ran at 68.9 per cent efficiency. The
+          supplied 470 microhenry ferrite choke was both the wrong inductance for the design
+          and a poor core, so it saturated and drew excess current. I built a test circuit
+          to measure saturation current and used an LCR meter to characterise candidates,
+          then wound a 300 microhenry inductor on a plastic bobbin, 40 turns with a paper
+          air gap, chosen to hold above 5 A without saturating and to have lower winding
+          resistance than the supplied part.
+        </p>
+        <p>
+          With the new inductor and a rebuilt breadboard layout that shortened the high
+          current loops, the converter reached 90.62 per cent efficiency at 40 V in,
+          9.976 V out and 3.49 A, under closed loop PI control at 50 kHz on an Arduino Uno.
+        </p>
+      </div>
+    </div>
+
+    <div class="chips">
+      <div class="chip"><span class="label">Efficiency</span><div class="cv">68.9 to 90.62 per cent</div></div>
+      <div class="chip"><span class="label">Regulation</span><div class="cv">9.976 V from a 10 V target</div></div>
+      <div class="chip"><span class="label">Control</span><div class="cv">PI, 50 kHz PWM, Arduino Uno</div></div>
+      <div class="chip"><span class="label">My part</span><div class="cv">300 uH inductor, efficiency work</div></div>
+    </div>
+
+    <div class="figs two">
+      <figure>
+        <img src="assets/img/buck-board.jpg" alt="Annotated photograph of the final breadboard build showing heat sinks, reduced windings, filter capacitors and the 300 microhenry inductor." loading="lazy" width="1024" height="852">
+        <figcaption>The optimised build. Shorter high current loops, heat sinks on both switches, and the wound 300 microhenry inductor at the right.</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/img/buck-inductor.jpg" alt="Laboratory test circuit for characterising the inductor, with a current probe attached." loading="lazy" width="1200" height="564">
+        <figcaption>The inductor test circuit used to find the saturation current before committing the part to the converter.</figcaption>
+      </figure>
+    </div>
+  </article>
+
+  <button class="more-btn" id="more" type="button" aria-expanded="false">Show all six projects</button>
+</main>
+
+<!-- ============================= APPROACH ============================= -->
+<section class="wrap" id="approach">
+  <div class="section-head">
+    <span class="label">Approach</span>
+    <span class="bar"></span>
+    <span class="label">And what I work with</span>
+  </div>
+
+  <div class="two-col">
+    <div>
+      <h2 class="display">How I work.</h2>
+      <p class="lede">
+        I am a final year Electrical and Electronic Engineering (Honours) student at UTS,
+        completing in November 2026, and I am aiming for a career in power systems. I like
+        problems that force me to work across hardware, software and the physical bench at
+        the same time.
+      </p>
+      <p>
+        Two habits show up in every project on this page. The first is that I check a
+        result before I report it, and I have been burned enough to know that a test
+        passing is not the same as a design being correct. The second is that when a
+        number is a team result, or is not yet verified, I label it that way rather than
+        letting it read as mine.
+      </p>
+      <p>
+        I have been the person who found the gap nobody had scoped, on the LV busbar in
+        the protection project, and the person who told a hospital its device was not
+        accurate enough yet. Both of those were more useful than staying quiet would have
+        been.
+      </p>
+    </div>
+
+    <div>
+      <div class="skills">
+        <div class="skill">
+          <span class="label">Power system analysis</span>
+          <p>Load flow, short circuit, N-1 contingency, transient stability, voltage stability and P-V curves.</p>
+        </div>
+        <div class="skill">
+          <span class="label">Protection</span>
+          <p>Transformer and busbar differential (87T, 87B), overcurrent and earth fault (50/51P, 50/51G), CT selection and polarity matching, relay grading.</p>
+        </div>
+        <div class="skill">
+          <span class="label">Simulation</span>
+          <p>Siemens PSS&reg;E, DIgSILENT PowerFactory, MATLAB and Simulink with Simscape Electrical and Simscape Battery, LTspice.</p>
+        </div>
+        <div class="skill">
+          <span class="label">Programming</span>
+          <p>C and C++ for embedded work, MATLAB, and Python for PSS&reg;E automation and data analysis.</p>
+        </div>
+        <div class="skill">
+          <span class="label">Instrumentation</span>
+          <p>Transducer selection verified on the bench, calibration methodology, oscilloscope and LCR measurement, closed loop control on microcontrollers.</p>
+        </div>
+        <div class="skill">
+          <span class="label">Standards and guidance</span>
+          <p>NER S5.1a and S5.1.4, AEMO stability guidelines, IEC 60255 relay curves, ERS 2020 oscillometry.</p>
+        </div>
+      </div>
+
+      <div class="note" style="margin-top:26px">
+        <strong>Also worth knowing.</strong> I tutored Foundations of Electrical and
+        Electronic Engineering at UTS in 2024, one of a small group of student tutors
+        selected for the subject, running tutorials of three to six students and taking
+        questions outside class hours.
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+  <nav class="pager" aria-label="Portfolio pages">
+    <span></span>
+    <a class="next" href="resume.html"><span class="label">Next</span><span class="t">Resume</span></a>
+  </nav>
+</div>
+
+<!-- ============================= CONTACT ============================= -->
+<footer class="contact" id="contact">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="label">Contact</span>
+      <span class="bar"></span>
+      <span class="label">Sydney, NSW</span>
+    </div>
+    <h2>Looking for power<br>systems work in Sydney.</h2>
+    <div class="links">
+      <a href="mailto:HenryKhuc03@gmail.com">
+        <span class="label">Email</span>HenryKhuc03@gmail.com
+      </a>
+      <a href="https://www.linkedin.com/in/henrykhuc" target="_blank" rel="noopener">
+        <span class="label">LinkedIn</span>linkedin.com/in/henrykhuc
+      </a>
+      <span>
+        <span class="label">Availability</span>Full time from November 2026
+      </span>
+    </div>
+    <p class="colophon">
+      Henry Khuc &middot; Bachelor of Engineering (Honours), Electrical and Electronic &middot;
+      University of Technology Sydney &middot; ePortfolio 2026
+    </p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var projects = Array.prototype.slice.call(document.querySelectorAll('.project'));
+  var buttons  = Array.prototype.slice.call(document.querySelectorAll('.filters button'));
+  var moreBtn  = document.getElementById('more');
+  var count    = document.getElementById('work-count');
+  var expanded = false;
+  var filter   = 'all';
+
+  var WORDS = ['Zero', 'One', 'Two', 'Three', 'Four', 'Five', 'Six'];
+
+  function matches(el) {
+    return filter === 'all' || el.dataset.area.split(' ').indexOf(filter) !== -1;
+  }
+
+  function render() {
+    var shown = 0;
+    projects.forEach(function (el) {
+      var visible = matches(el) && (expanded || !el.classList.contains('extra'));
+      el.hidden = !visible;
+      if (visible) shown++;
+    });
+
+    // The reveal button is pointless once a filter has already hidden the extras.
+    var hiddenExtras = projects.filter(function (el) {
+      return el.classList.contains('extra') && matches(el);
+    }).length;
+    moreBtn.hidden = expanded || hiddenExtras === 0;
+
+    var label = WORDS[shown] || shown;
+    count.textContent = shown === 1 ? 'One project' : label + ' projects';
+  }
+
+  buttons.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      filter = btn.dataset.filter;
+      buttons.forEach(function (b) {
+        b.setAttribute('aria-pressed', String(b === btn));
+      });
+      if (filter !== 'all') expanded = true;
+      render();
+    });
+  });
+
+  moreBtn.addEventListener('click', function () {
+    expanded = true;
+    moreBtn.setAttribute('aria-expanded', 'true');
+    render();
+  });
+
+  render();
+})();
+</script>
+
+</body>
+</html>

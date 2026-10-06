@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Internship Reflection &middot; Henry Khuc</title>
+<meta name="description" content="Reflection on a twelve week engineering internship at Optik Consultancy, delivering a respiratory measurement device to Royal North Shore Hospital.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,200..600&family=Geist+Mono:wght@400..600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<nav class="nav" aria-label="Primary">
+  <a class="home" href="index.html">HK</a>
+  <a class="opt" href="index.html#work">Work</a>
+  <a href="resume.html">Resume</a>
+  <a href="reflection.html" aria-current="page">Reflection</a>
+  <a href="cover-letter.html">Cover letter</a>
+  <a class="opt" href="index.html#contact">Contact</a>
+</nav>
+
+<header class="page-hero wrap">
+  <span class="label">Optik Consultancy &middot; May to August 2026</span>
+  <h1>Internship<br>reflection</h1>
+  <p class="lede">
+    Twelve weeks as the electrical and measurement engineer on a respiratory monitoring
+    device, delivered through Optik Consultancy at UTS Tech Lab for the Respiratory
+    Investigation Unit at Royal North Shore Hospital.
+  </p>
+</header>
+
+<main class="wrap" id="reflection">
+  <div class="photo-strip">
+    <figure class="photo">
+      <img src="assets/img/optik-measure.jpg" alt="A subject lying down wearing a ventilation mask connected to the oscillometry device through a flow head." width="1800" height="1050">
+      <figcaption>The device measuring a subject on a ventilator at the showcase.</figcaption>
+    </figure>
+    <figure class="photo">
+      <img src="assets/img/optik-device.jpg" alt="The project team gathered around the assembled device on a bench, reviewing printed results." width="1206" height="1608">
+      <figcaption>Final day: reviewing results around the device.</figcaption>
+    </figure>
+    <figure class="photo">
+      <img src="assets/img/optik-team.jpg" alt="The full project team standing behind their showcase table with the device and poster." width="1800" height="1012">
+      <figcaption>Showcase and handover, August 2026.</figcaption>
+    </figure>
+  </div>
+
+  <div class="two-col">
+    <div>
+      <h2 class="display">What I expected, what happened, and what changed.</h2>
+      <p class="lede">
+        The short version: I thought the hardware would be the hard part. The harder and
+        more useful lessons were about defining the problem and about not trusting a
+        passing test.
+      </p>
+      <p class="wordcount">487 words</p>
+    </div>
+    <div>
+      <div class="qa">
+        <span class="label">What were your expectations about your internship before you joined?</span>
+        <p>Before I joined Optik, I expected an execution job: take a brief, propose a device, and build it. I assumed the electrical and firmware side would be the hard part, and that the clinical problem, measuring respiratory mechanics during non-invasive ventilation, would already be well defined when the brief arrived from Royal North Shore Hospital.</p>
+      </div>
+      <div class="qa">
+        <span class="label">What was the reality? How was it different from your expectations?</span>
+        <p>The reality was different from the first week. Our early discussions slid into solution design, picking a speaker and sketching a circuit, before we had confirmed what the hospital needed and why its existing commercial device, the Philips BiPAP A40 EFL, fell short. We had to treat the first phase as discovery and go back to the client with sharper questions.</p>
+        <p>The technical reality was harder too. Two earlier student groups had tried this problem and failed for basic reasons: one chose a speaker that could not oscillate at the frequencies we needed, and another destroyed its own. Electrical engineering capability, not enthusiasm, was the bottleneck, and that is what I was there to supply.</p>
+      </div>
+      <div class="qa">
+        <span class="label">What lessons were the most important from your internship? Why were they important?</span>
+        <p>The most important lesson was that a passing test does not always prove what you think it proves. My calibration correction passed the daily system check for weeks while producing wrong measurements on real patients, because the check verified it only at the two points where it was correct by construction. That taught me verification: trusting a bench measurement over a model, and asking what a test actually validates before accepting a green result.</p>
+        <p>I also learned to report limitations honestly. When I demonstrated the device to the hospital, I told the clinical team directly that the patient-side measurement was not yet accurate enough, and why. That was more useful to them than a polished demonstration, and it is now the standard I hold my own work to.</p>
+      </div>
+      <div class="qa">
+        <span class="label">After your workplace experience, what would you say your value proposition would be to an employer? How can you demonstrate this?</span>
+        <p>My value proposition is that I can take a partly defined problem, turn it into working hardware and firmware, and then validate it properly instead of assuming it works. On this project I built the excitation firmware, the measurement engine and the calibration methodology, and the hospital received a working measurement after two earlier student attempts had failed. The evidence is the device, the calibration and validation data behind it, and my handover report setting out what works, what does not and why, which the supervising clinician singled out as valuable.</p>
+      </div>
+      <div class="qa">
+        <span class="label">How did your internship influence the type of role in which you are interested?</span>
+        <p>The internship did not pull me away from power systems, which is still where I want to build my career, but it sharpened what I look for in a role. I want work involving real measurement, not only simulation, where I am expected to validate my results against physical data. Optik also confirmed that I do my best work when the specification is not handed to me complete and I have to help define it. Power system studies and protection work at a network operator or consultancy offer exactly that, and that is where I am heading next.</p>
+      </div>
+    </div>
+  </div>
+
+  <nav class="pager" aria-label="Portfolio pages">
+    <a href="resume.html"><span class="label">Previous</span><span class="t">Resume</span></a>
+    <a class="next" href="cover-letter.html"><span class="label">Next</span><span class="t">Cover letter</span></a>
+  </nav>
+</main>
+
+<footer class="contact" id="contact">
+  <div class="wrap">
+    <div class="links">
+      <a href="mailto:HenryKhuc03@gmail.com"><span class="label">Email</span>HenryKhuc03@gmail.com</a>
+      <a href="https://www.linkedin.com/in/henrykhuc" target="_blank" rel="noopener"><span class="label">LinkedIn</span>linkedin.com/in/henrykhuc</a>
+      <span><span class="label">Availability</span>Full time from November 2026</span>
+    </div>
+    <p class="colophon">Henry Khuc &middot; Bachelor of Engineering (Honours), Electrical and Electronic &middot; University of Technology Sydney &middot; ePortfolio 2026</p>
+  </div>
+</footer>
+
+</body>
+</html>
