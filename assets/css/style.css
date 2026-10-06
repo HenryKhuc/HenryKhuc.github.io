@@ -325,8 +325,20 @@ figcaption{font-family:var(--mono);font-size:10.5px;line-height:1.6;letter-spaci
 .cv-skills tr:last-child th,.cv-skills tr:last-child td{border-bottom:0}
 @media (max-width:560px){.cv-skills th,.cv-skills td{display:block;width:auto;padding:4px 0}.cv-skills th{border-bottom:0;padding-top:12px}}
 
-/* cover letter */
-.letter{max-width:72ch;margin:0 auto 0 0;background:var(--panel);border:1px solid var(--line);padding:clamp(24px,5vw,60px)}
+/* cover letter: criteria index on the left, letter filling the rest */
+.letter-layout{display:grid;grid-template-columns:230px minmax(0,1fr);gap:clamp(28px,4vw,56px);align-items:start}
+@media (max-width:880px){.letter-layout{grid-template-columns:1fr;gap:22px}}
+.letter-index{position:sticky;top:calc(96px + env(safe-area-inset-top,0px))}
+@media (max-width:880px){.letter-index{position:static}}
+.letter-index .label{display:block;margin-bottom:12px}
+.letter-index ol{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.letter-index li{border-bottom:1px solid var(--line)}
+.letter-index a{display:flex;gap:12px;align-items:baseline;padding:11px 2px;font-size:15px;line-height:1.35;color:var(--muted);text-decoration:none;transition:color .18s ease,padding-left .18s ease}
+.letter-index a:hover,.letter-index a:focus-visible{color:var(--ink);padding-left:6px}
+.letter-index .n{font-family:var(--mono);font-size:10.5px;color:var(--accent);flex:none;width:12px}
+.letter h3{scroll-margin-top:110px}
+
+.letter{background:var(--panel);border:1px solid var(--line);padding:clamp(24px,5vw,64px)}
 .letter p{max-width:none}
 .letter .meta{font-family:var(--mono);font-size:11.5px;letter-spacing:.05em;color:var(--muted);line-height:1.8;margin-bottom:30px}
 .letter .re{font-weight:500;color:var(--head)}
